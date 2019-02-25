@@ -1,0 +1,67 @@
+void keyPressed() {
+  switch (keyCode) {
+    case UP_KEY:
+      upHold = true;
+      break;
+    case LEFT_KEY:
+      leftHold = true;
+        break;
+    case DOWN_KEY:
+      downHold = true;
+      break;
+    case RIGHT_KEY:
+      rightHold = true;
+      break;
+    case SHIFT_KEY:
+      shiftHold = true;
+      break;
+    case Z_KEY:
+      zHold = true;
+      break;
+    case X_KEY:
+      xHold = true;
+      break;
+    case C_KEY:
+      cHold = true;
+      break;
+  }
+}
+
+
+private final int UP_KEY    = 38;
+private final int LEFT_KEY  = 37;
+private final int DOWN_KEY  = 40;
+private final int RIGHT_KEY = 39;
+private final int SHIFT_KEY = 16;
+private final int Z_KEY     = 90;
+private final int X_KEY     = 88;
+private final int C_KEY     = 67;
+
+void keyReleased() {
+  switch (keyCode) {
+    case UP_KEY:
+      upHold = false;
+      break;
+    case LEFT_KEY:
+      leftHold = false;
+        break;
+    case DOWN_KEY:
+      downHold = false;
+      break;
+    case RIGHT_KEY:
+      rightHold = false;
+      break;
+    case SHIFT_KEY:
+      shiftHold = false;
+      break;
+    case Z_KEY:
+      zHold = false;
+      break;
+    case X_KEY:
+      xHold = false;
+      break;
+    case C_KEY:
+      cHold = false;
+      break;
+  }
+}
